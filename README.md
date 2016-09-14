@@ -1,6 +1,6 @@
-# An attempt to use LaTeX to make a GO/Baduk/Weiqi book.
+### An attempt to use LaTeX to make a GO/Baduk/Weiqi book.
 
-## Initial "frame" is from: 
+Initial "frame" is from: 
 ```
 https://github.com/oetiker/lshort 
 ```
