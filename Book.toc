@@ -1,3 +1,0 @@
-\select@language {greek}
-\select@language {greek}
-\select@language {english}
