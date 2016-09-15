@@ -24,3 +24,5 @@ foreword.aux
 *.synctex
 
 Book.pdf
+
+*.toc
