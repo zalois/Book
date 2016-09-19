@@ -1,22 +1,6 @@
 \documentclass[a4paper,UTF8]{book}
-\setcounter{tocdepth}{1}
 
-\usepackage{fancyhdr} %to manage header and footer
-\usepackage{igo} %package mainly for GO diagram and also GO move number within content
-\usepackage[nopunct]{ctex} %package mainly for displaying Chinese words
-\usepackage{tocloft} %package for TOCDiagram 1 (1--251) 
-\usepackage[pdfpagelayout=TwoPageRight]{hyperref} %force PDF to always open title page on right side
-\usepackage{chngcntr} %let the TOC section number continue across chapters
-
-\renewcommand{\chaptername}{} %remove "chapter no" from title 
-\renewcommand{\thechapter}{} %removeDiagram 1 (1--251) "chapter no" from title
-
-\renewcommand\cftchapaftersnum{} %change TOC chapter numbering for I. to I(nodot)
-\renewcommand\cftsecaftersnum{} %change TOC section numbering for 1. to 1(nodot)
-
-\renewcommand\thesection{\arabic{chapter}} %make section on TOC starts with 1,2,3
-
-%\counterwithout{section}{chapter} %let the TOC section number continue across chapters
+\include{preamble}
 
 \begin{document}
 
