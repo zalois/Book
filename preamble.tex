@@ -7,7 +7,8 @@
 \usepackage[pdfpagelayout=TwoPageRight]{hyperref} %force PDF to always open title page on right side
 \usepackage{chngcntr} %let the TOC section number continue across chapters
 \usepackage{graphicx} %only when need to insert diagram by eps file
-\usepackage{geometry}
+\usepackage{geometry} %For page layout
+\pagestyle{fancy}
 
 %below are for margin setting
 \geometry{
@@ -20,11 +21,17 @@
 \renewcommand{\chaptername}{} %remove "chapter no" from title 
 \renewcommand{\thechapter}{} %remove "chapter no" from title
 
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}} %remove "chapter." from header
+
 \renewcommand\cftchapaftersnum{} %change TOC chapter numbering for I. to I(nodot)
 \renewcommand\cftsecaftersnum{} %change TOC section numbering for 1. to 1(nodot)
 
 \renewcommand\thesection{\arabic{chapter}} %make section on TOC starts with 1,2,3
 
+\renewcommand{\headrulewidth}{0.4pt}
+
 \setlength\parindent{0pt} %make all paragraph looks like no ident
+
+
 
 %\counterwithout{section}{chapter} %let the TOC section number continue across chapters
