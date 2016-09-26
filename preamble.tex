@@ -1,16 +1,16 @@
 \setcounter{tocdepth}{1}
 
-\usepackage{fancyhdr} %to manage header and footer
-\usepackage{igo} %package mainly for GO diagram and also GO move number within content
-\usepackage[nopunct]{ctex} %package mainly for displaying Chinese words
-\usepackage{tocloft} %package for TOCDiagram 1 (1--251) 
-\usepackage[pdfpagelayout=TwoPageRight]{hyperref} %force PDF to always open title page on right side
-\usepackage{chngcntr} %let the TOC section number continue across chapters
-\usepackage{graphicx} %only when need to insert diagram by eps file
-\usepackage{geometry} %For page layout
+\usepackage{fancyhdr} % To manage header and footer
+\usepackage{igo} % Package mainly for GO diagram and also GO move number within content
+\usepackage[nopunct]{ctex} % Package mainly for displaying Chinese words
+\usepackage{tocloft} %Package for TOCDiagram 1 (1--251) 
+\usepackage[pdfpagelayout=TwoPageRight]{hyperref} % Force PDF to always open title page on right side
+\usepackage{chngcntr} % Let the TOC section number continue across chapters
+\usepackage{graphicx} % Only when need to insert diagram by eps file
+\usepackage{geometry} % For page layout
 \pagestyle{fancy}
 
-%below are for margin setting
+% Below are for margin setting
 \geometry{
 	a4paper,
 	inner=30mm,
@@ -18,19 +18,19 @@
 	bottom=30mm,
 }
 
-\renewcommand{\chaptername}{} %remove "chapter no" from title 
-\renewcommand{\thechapter}{} %remove "chapter no" from title
+\renewcommand{\chaptername}{} % Remove "chapter no" from title 
+\renewcommand{\thechapter}{} % Remove "chapter no" from title
 
-\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}} %remove "chapter." from header
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}} % Remove "chapter." from header
 
-\renewcommand\cftchapaftersnum{} %change TOC chapter numbering for I. to I(nodot)
-\renewcommand\cftsecaftersnum{} %change TOC section numbering for 1. to 1(nodot)
+\renewcommand\cftchapaftersnum{} % Change TOC chapter numbering for I. to I(nodot)
+\renewcommand\cftsecaftersnum{} % Change TOC section numbering for 1. to 1(nodot)
 
-\renewcommand\thesection{\arabic{chapter}} %make section on TOC starts with 1,2,3
+\renewcommand\thesection{\arabic{chapter}} % Make section on TOC starts with 1,2,3
 
 \renewcommand{\headrulewidth}{0.4pt}
 
-\setlength\parindent{0pt} %make all paragraph looks like no ident
+\setlength\parindent{0pt} % Make all paragraph looks like no ident
 
 % Below is to create easy command for stone display in middle of text
 % Black Stone:
@@ -436,9 +436,5 @@
 \newcommand{w198}{\includegraphics{stone/w198}}
 \newcommand{w199}{\includegraphics{stone/w199}}
 \newcommand{w200}{\includegraphics{stone/w200}}
-
-
-
-
 
 %\counterwithout{section}{chapter} %let the TOC section number continue across chapters
