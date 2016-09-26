@@ -1,13 +1,16 @@
 \setcounter{tocdepth}{1}
 
 \usepackage{fancyhdr} % To manage header and footer
-\usepackage[nopunct]{ctex} % Package mainly for displaying Chinese words
+
+\usepackage{fontspec} % Enable CJK
+\usepackage{xeCJK} % Enable CJK
+
 \usepackage{tocloft} %Package for TOCDiagram 1 (1--251) 
 \usepackage[pdfpagelayout=TwoPageRight]{hyperref} % Force PDF to always open title page on right side
 \usepackage{chngcntr} % Let the TOC section number continue across chapters
 \usepackage{graphicx} % Only when need to insert diagram by eps file
 \usepackage{geometry} % For page layout
-\usepackage{noto} % To use font Noto
+\usepackage[sfdefault]{noto} % To use font Noto
 
 \pagestyle{fancy}
 
@@ -30,6 +33,8 @@
 \renewcommand\thesection{\arabic{chapter}} % Make section on TOC starts with 1,2,3
 
 \renewcommand{\headrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.3} % Set wider line spacing
 
 \setlength\parindent{0pt} % Make all paragraph looks like no ident
 
