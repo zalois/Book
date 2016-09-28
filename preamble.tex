@@ -23,6 +23,7 @@
 %	heightrounded,
 ]{geometry}
 
+
 %\usepackage[% For page layout
 	%inner=30mm,
 	%textwidth=140mm,
@@ -31,6 +32,8 @@
 	%includehead,includefoot,
 	%heightrounded,
 %]{geometry}
+
+\usepackage{xifthen}
 
 \usepackage{titlesec}
 
@@ -42,8 +45,10 @@
 
 \pagestyle{fancy}
 
+\newcommand{\partinheader}{\ifthenelse{\equal{\thepart}{I}}{古李十番棋}{古李对局记录}}
+
 \fancyhead[RO]{\leftmark}
-\fancyhead[LE]{ }
+\fancyhead[LE]{\partinheader}
 \fancyhead[LO,RE]{ }
 %\fancyfoot{}
 
