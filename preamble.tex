@@ -14,25 +14,37 @@
 
 \usepackage[% For page layout
 	inner=30mm,
-	textwidth=140mm,
-	bottom=30mm,
+	outer=30mm,
+%	textwidth=140mm,
+	top=35mm,
+	bottom=35mm,
 	headheight=13pt,
-	includehead,includefoot,
-	heightrounded,
+%	includehead,includefoot,
+%	heightrounded,
 ]{geometry}
+
+%\usepackage[% For page layout
+	%inner=30mm,
+	%textwidth=140mm,
+	%bottom=30mm,
+	%headheight=13pt,
+	%includehead,includefoot,
+	%heightrounded,
+%]{geometry}
 
 \usepackage{titlesec}
 
 \titleformat{\chapter}
-  {\Large}
+  {\Large\bf}
   {}                % label
   {0pt}             % sep
   {\huge}           % before-code
 
 \pagestyle{fancy}
 
-\fancyhead[LE,RO]{\chaptermark}
-\fancyhead[LO,RE]{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{ }
+\fancyhead[LO,RE]{ }
 %\fancyfoot{}
 
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}} % Remove "chapter." from header
