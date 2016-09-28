@@ -31,7 +31,7 @@
 \renewcommand\cftchapaftersnum{} % Change TOC chapter numbering for I. to I(nodot)
 \renewcommand\cftsecaftersnum{} % Change TOC section numbering for 1. to 1(nodot)
 
-\renewcommand\cftpartfont{\normalfont} % Change TOC Part font NOT to be bold
+\renewcommand\cftpartfont{\large\normalfont} % Change TOC Part font NOT to be bold
 \renewcommand\cftpartpagefont{\normalfont} % Change TOC Part page number NOT to be bold
 
 \renewcommand\cftchapfont{\normalfont} % Change TOC Chapter font NOT to be bold
@@ -39,7 +39,10 @@
 
 \renewcommand{\contentsname}{\hfill 目录\hfill}
 
-\renewcommand{\@dotsep}{5} % To have dotted line before page number in TOC 
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+\renewcommand{\cftdot}{. }
 
 \renewcommand\thesection{\arabic{chapter}} % Make section on TOC starts with 1,2,3
 
