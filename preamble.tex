@@ -30,13 +30,8 @@
   {\huge}           % before-code
 
 \pagestyle{fancy}
-\fancyhead[RO,LE]{\leftmark}
+
 \fancyhead[LE,RO]{\thepage}
-
-%\renewcommand{\chaptername}{} % Remove "chapter no" from title 
-%\renewcommand{\thechapter}{} % Remove "chapter no" from title
-
-
 
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}} % Remove "chapter." from header
 
@@ -60,9 +55,7 @@
 \setlength\parindent{0pt} % Make all paragraph looks like no ident
 
 % Command for black stones and white stones in text
-
 % Black stones
-
 \newcommand{\bsq}{\includegraphics[trim=-0.7 3.35 0 0]{stone/b1}}
 \newcommand{\bsw}{\includegraphics[trim=-0.7 3.35 0 0]{stone/b2}}
 \newcommand{\bse}{\includegraphics[trim=-0.7 3.35 0 0]{stone/b3}}
@@ -746,5 +739,3 @@
 \newcommand{\wseei}{\includegraphics[trim=-0.7 3.1 0 0]{stone/w338}}
 \newcommand{\wseeo}{\includegraphics[trim=-0.7 3.1 0 0]{stone/w339}}
 \newcommand{\wserp}{\includegraphics[trim=-0.7 3.1 0 0]{stone/w340}}
-
-%\counterwithout{section}{chapter} %let the TOC section number continue across chapters
