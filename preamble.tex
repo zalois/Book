@@ -23,8 +23,6 @@
 
 \pagestyle{fancy}
 
-% Below are for margin setting
-
 \renewcommand{\chaptername}{} % Remove "chapter no" from title 
 \renewcommand{\thechapter}{} % Remove "chapter no" from title
 
@@ -39,7 +37,9 @@
 \renewcommand\cftchapfont{\normalfont} % Change TOC Chapter font NOT to be bold
 \renewcommand\cftchappagefont{\normalfont} % Change TOC Chapter page number NOT to be bold
 
-\renewcommand{\@dotsep}{10000} % To have dotted line before page number in TOC 
+\renewcommand{\contentsname}{\hfill 目录\hfill}
+
+\renewcommand{\@dotsep}{5} % To have dotted line before page number in TOC 
 
 \renewcommand\thesection{\arabic{chapter}} % Make section on TOC starts with 1,2,3
 
