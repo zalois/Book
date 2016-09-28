@@ -11,6 +11,7 @@
 \usepackage{tocloft} %Package for TOC
 \usepackage[pdfpagelayout=TwoPageRight]{hyperref} % Force PDF to always open title page on right side
 \usepackage{graphicx} % Only when need to insert diagram by eps file
+
 \usepackage[% For page layout
 	inner=30mm,
 	textwidth=140mm,
@@ -20,10 +21,18 @@
 	heightrounded,
 ]{geometry}
 
+\titleformat{\chapter}
+  {}
+  {}                % label
+  {0pt}             % sep
+  {}           % before-code
+
 \pagestyle{fancy}
 
 %\renewcommand{\chaptername}{} % Remove "chapter no" from title 
 %\renewcommand{\thechapter}{} % Remove "chapter no" from title
+
+
 
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}} % Remove "chapter." from header
 
