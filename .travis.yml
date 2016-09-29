@@ -1,8 +1,5 @@
 sudo: required
 dist: trusty
-language: cpp		
-compiler:		
-  - gcc		
 branches:		
   only:		
     - master		
@@ -14,7 +11,8 @@ script:
   - latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
 deploy:
   provider: releases
-  api_key: $GH_TOKEN
+  api_key: 
+    secure: $GH_TOKEN
   file: Book.pdf
   skip_cleanup: true
   on:
