@@ -10,3 +10,10 @@ before_install:
   - sudo fc-cache -f -v		
 script:		
   - latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
+deploy:
+  provider: releases
+  api_key: 18e21b4384438346209a0d58c2fb2047b386dc71
+  file: Book.pdf
+  skip_cleanup: true
+  on:
+    tags: true
