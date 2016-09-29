@@ -39,11 +39,11 @@
 
 \usepackage{titlesec}
 
-\titleformat{\chapter}
-  {\Large\bf}
-  {}                % label
-  {0pt}             % sep
-  {\filleft\huge}           % before-code
+\titleformat{\chapter}[display]
+  {\Huge\bf}
+  {\filleft 第 \thechapter 章}                % label
+  {10pt}             % sep
+  {\hrule\vspace{15pt}\filleft\huge}           % before-code
 
 \pagestyle{fancy}
 
