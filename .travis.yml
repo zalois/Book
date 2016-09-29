@@ -10,18 +10,11 @@ before_install:
   - sudo apt-get update -qq		
   - sudo apt-get install -y texlive-full		
   - sudo fc-cache -f -v		
-before_script:
-  - composer self-update -q
-  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
-  - if [ -z "$dependencies" ]; then composer install; fi;
-  - if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest -n; fi;
-  - if [ "$dependencies" = "highest" ]; then composer update -n; fi;
-  - composer show -i
 script:		
   - latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
 deploy:
   provider: releases
-  api_key: GH_TOKEN
+  api_key: $GH_TOKEN
   file: Book.pdf
   skip_cleanup: true
   on:
