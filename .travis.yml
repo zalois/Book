@@ -9,11 +9,3 @@ before_install:
   - sudo fc-cache -f -v		
 script:		
   - latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
-deploy:
-  provider: releases
-  api_key: 
-    secure: $GH_TOKEN
-  file: Book.pdf
-  skip_cleanup: true
-  on:
-    repo: Quanloh/Book
