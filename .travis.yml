@@ -1,11 +1,18 @@
 sudo: required
 dist: trusty
-branches:		
-  only:		
-    - master		
-before_install:		
-  - sudo apt-get update -qq		
-  - sudo apt-get install -y texlive-full		
-  - sudo fc-cache -f -v		
-script:		
-  - latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
+branches:
+  only:
+  - master
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get install -y texlive-full
+- sudo fc-cache -f -v
+script:
+- latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: NNy1K6Sz51C4xcZB/Oi96yOZDJu9aXFfjOyYwwau52VHa2lWOXDY2TL6uDDeP4K2aeMofbVaTP6WYR0RFiPTQJNm+UNSlwbAODliIRgWW7cg4klKM7NhOc/zBgRgslGLe0TOL8yEnhkiBZuV+xgXyUyC3XvLtFDb4CWHnHI2X/HLhjW6MwlLLx80hItzaDEcLaLY4Mt9bHBw3SkHG5Vxm1VxyTMddCQBLOgUHyCarom6a1lQLwnniqVOH0e+nGcNV0wsjgENd6RDIfx30Nmm/5bUMJjF2ALGssQ+zU/onu4XaoIPv+ffYoru8XUuZAqBgoix99R9E6Op46gCBH/2123PWQJuiNXrxZTq+o+OY9DSWsXM4flfdofiZMpU2mSJJ5OMPh7q/THA7DlIWwhNHf9gVgP+SY0ReRjRaNMNOObpOgMmOnCtkxsmXXGxk203AfhPiIr/Azs0xHbbj8quOZ3sTAiDi3AcWeRwNrldPKjXCDRPysQoe8jxLyp4QTpw4x++8yRGWfsDF3rP1oAr/Vc3xzqAtfSm9mOkvFS/7IEDl6hWvyuWmXg+5r4ECP3XKe58xQirQ+dyML9vRPNAkfcMYL0mHzWxmy1ql7L9hrzRv2loeGo9StnbCDUV8oOy2Lw6LB45H7ry+Rt/zPcmFdReslGSefwIMQv7Bcpx118=
+  file: Book.pdf
+  on:
+    repo: Quanloh/Book
