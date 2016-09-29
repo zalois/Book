@@ -45,7 +45,7 @@
 
 \pagestyle{fancy}
 
-\newcommand{\partinheader}{\ifthenelse{\equal{\thepart}{I}}{古李十番棋}{古李对局记录}}
+\newcommand{\partinheader}{\ifthenelse{\equal{\thepart}{I}}{古李十番棋}{\ifthenelse{\equal{\thepart}{II}}{古李对局记录}{ }}}
 
 \fancyhead[RO]{\leftmark}
 \fancyhead[LE]{\partinheader}
