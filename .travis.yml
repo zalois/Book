@@ -16,4 +16,3 @@ deploy:
   file: Book.pdf
   on:
     repo: Quanloh/Book
-    tags: true
