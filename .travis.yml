@@ -5,19 +5,13 @@ branches:
   - master
 before_install:
  - sudo mkdir -p /usr/share/fonts/opentype/noto
- - sudo mkdir -p /usr/share/dnnn
- - cd /usr/share/dnnn
- - sudo wget -c https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKsc-hinted.zip
- - sudo rm ./Noto -rf
- - sudo unzip NotoSansCJKsc-hinted.zip -d noto
- - cd
- - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Black.otf /usr/share/fonts/opentype/noto
- - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Bold.otf /usr/share/fonts/opentype/noto
- - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-DemiLight.otf /usr/share/fonts/opentype/noto
- - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Light.otf /usr/share/fonts/opentype/noto
- - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Medium.otf /usr/share/fonts/opentype/noto
- - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Regular.otf /usr/share/fonts/opentype/noto
- - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Thin.otf /usr/share/fonts/opentype/noto
+ - sudo cp /NotoSansCJKsc-Black.otf /usr/share/fonts/opentype/noto
+ - sudo cp /NotoSansCJKsc-Bold.otf /usr/share/fonts/opentype/noto
+ - sudo cp /NotoSansCJKsc-DemiLight.otf /usr/share/fonts/opentype/noto
+ - sudo cp /NotoSansCJKsc-Light.otf /usr/share/fonts/opentype/noto
+ - sudo cp /NotoSansCJKsc-Medium.otf /usr/share/fonts/opentype/noto
+ - sudo cp /NotoSansCJKsc-Regular.otf /usr/share/fonts/opentype/noto
+ - sudo cp /NotoSansCJKsc-Thin.otf /usr/share/fonts/opentype/noto
  - sudo fc-cache -f -v
  - sudo apt-get update -qq
  - sudo apt-get install -y texlive-full
