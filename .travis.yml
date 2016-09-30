@@ -18,7 +18,7 @@ before_install:
  - sudo fc-cache -f -v
  - sudo fc-list :lang=zh
 script:
- - latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
+ - latexmk -pdf -e '$pdflatex=q/xetex %O %S/' Book.tex
 notifications:
   email:
     - lohkeechuan@gmail.com
