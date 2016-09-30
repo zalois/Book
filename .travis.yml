@@ -8,6 +8,7 @@ before_install:
 - sudo mv ./NotoSansCJKsc-Light.otf /usr/share/fonts/opentype/
 - sudo mkfontscale
 - sudo mkfontdir
+- sudo fc-cache -fv
 - sudo apt-get update -qq
 - sudo apt-get install -y texlive-full
 - sudo fc-cache -f -v
