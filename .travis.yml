@@ -6,7 +6,7 @@ branches:
 before_install:
  - sudo mkdir -p /usr/share/fonts/opentype/noto
  - sudo mkdir -p /usr/share/dnnn
- - cd dnnn
+ - cd /usr/share/dnnn
  - sudo wget -c https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKsc-hinted.zip
  - sudo rm ./Noto -rf
  - sudo unzip NotoSansCJKsc-hinted.zip -d Noto
