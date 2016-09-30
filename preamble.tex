@@ -65,6 +65,15 @@
 
 \setlength\parindent{0pt} % Make all paragraph looks like no ident
 
+\newcommand{\dwitht}[2]{%
+\begin{minipage}{0.5\textwidth}
+	#1
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+	#2
+\end{minipage}
+}
+
 % Command for black stones and white stones in text
 % Black stones
 \newcommand{\bsq}{\includegraphics[trim=-0.7 3.35 0 0]{stone/b1}}
