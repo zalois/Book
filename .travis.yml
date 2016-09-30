@@ -8,7 +8,7 @@ before_install:
 - sudo apt-get install -y texlive-full
 - sudo fc-cache -f -v
 script:
-- latexmk -pdf -e '$pdflatex=q/xelatex %O %S/' Book.tex
+- make
 deploy:
   provider: releases
   api_key:
