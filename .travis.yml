@@ -4,11 +4,7 @@ branches:
   only:
   - master
 before_install:
- - sudo mkdir -p /usr/share/fonts/opentype/		
- - sudo mv ./NotoSansCJKsc-Light.otf /usr/share/fonts/opentype/		
- - sudo mkfontscale		
- - sudo mkfontdir		
- - sudo fc-cache -fv
+ - sudo apt-get install noto-sans
  - sudo apt-get update -qq
  - sudo apt-get install -y texlive-full
  - sudo fc-cache -f -v
