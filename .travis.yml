@@ -9,8 +9,8 @@ before_install:
  - cd /usr/share/dnnn
  - sudo wget -c https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKsc-hinted.zip
  - sudo rm ./Noto -rf
- - cd
  - sudo unzip NotoSansCJKsc-hinted.zip -d noto
+ - cd
  - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Black.otf /usr/share/fonts/opentype/noto
  - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-Bold.otf /usr/share/fonts/opentype/noto
  - sudo cp /usr/share/dnnn/noto/NotoSansCJKsc-DemiLight.otf /usr/share/fonts/opentype/noto
