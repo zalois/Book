@@ -10,7 +10,7 @@ before_install:
  - sudo wget -c https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKsc-hinted.zip
  - sudo rm ./Noto -rf
  - sudo unzip NotoSansCJKsc-hinted.zip -d Noto
- - sudo cp *otf *otc /usr/share/fonts/opentype/noto
+ - sudo cp *.otf *.otc /usr/share/fonts/opentype/noto
  - sudo fc-cache -f -v
  - sudo apt-get update -qq
  - sudo apt-get install -y texlive-full
