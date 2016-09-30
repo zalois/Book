@@ -66,13 +66,16 @@
 \setlength\parindent{0pt} % Make all paragraph looks like no ident
 
 \newcommand{\dwitht}[2]{%
-\begin{minipage}[t][][t]{0.5\textwidth}
-	\raggedright
+\begin{minipage}[t]{0.5\textwidth}
+	\begin{flushright}
 	#1
-\end{minipage}\hfill
-\begin{minipage}[t][][t]{0.45\textwidth}
-	\raggedright
+	\end{flushright}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+	\begin{flushright}
 	#2
+	\end{flushrignt}
 \end{minipage}
 }
 
