@@ -15,11 +15,11 @@
 \usepackage{graphicx} % Only when need to insert diagram by eps file
 
 \usepackage[% For page layout
-	inner=30mm,
-	outer=30mm,
+	inner=25mm,
+	outer=25mm,
 %	textwidth=140mm,
-	top=35mm,
-	bottom=35mm,
+	top=25mm,
+	bottom=25mm,
 	headheight=13pt,
 	includehead,includefoot,
 	heightrounded,
@@ -66,18 +66,18 @@
 \setlength\parindent{0pt} % Make all paragraph looks like no ident
 
 \newcommand{\dwitht}[2]{%
-\begin{minipage}[t]{0.5\textwidth}
-	\vspace{0pt} 
-	\raggedright
-	#1
-	\vspace{5pt} 
-\end{minipage}
-\hfill
 \begin{minipage}[t]{0.45\textwidth}
 	\vspace{0pt} 
 	\raggedright
+	#1
+	\vspace{9pt} 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{4pt} 
+	\raggedright
 	#2
-	\vspace{5pt} 
+	\vspace{9pt} 
 \end{minipage}
 }
 
