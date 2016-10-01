@@ -18,8 +18,8 @@
 	inner=25mm,
 	outer=25mm,
 %	textwidth=140mm,
-	top=25mm,
-	bottom=25mm,
+	top=20mm,
+	bottom=20mm,
 	headheight=13pt,
 	includehead,includefoot,
 	heightrounded,
@@ -66,7 +66,7 @@
 \setlength\parindent{0pt} % Make all paragraph looks like no ident
 
 \newcommand{\dwitht}[2]{%
-\begin{minipage}[t]{0.463\textwidth}
+\begin{minipage}[t]{0.478\textwidth}
 	\vspace{0pt} 
 	\raggedright
 	#1 \\
@@ -81,6 +81,13 @@
 	#2
 	\vspace{9pt} 
 \end{minipage}
+}
+
+\newcommand{\maind}[3]{
+	\begin{center}
+	#1 \\
+	第 #2 谱 ---（ 第 #3  手 ）\\
+	\end{center}
 }
 
 \newcommand{\holder}{如果黑棋想直接占角的话，下在A位或者B位会是更为有效的选择。在\bsq 之后，白棋可直接在A位打入，并将角地占为己有。但是在白棋确定角地的过程中，黑棋会就向中腹建立起雄厚的外势，这又使得白棋难以掌握打入A位的时机。}
