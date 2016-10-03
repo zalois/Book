@@ -4,15 +4,6 @@ branches:
   only:
   - master
 before_install:
- - sudo mkdir -p /usr/share/fonts/opentype/noto
- - sudo cp ./NotoSansCJKsc-Black.otf /usr/share/fonts/opentype/noto
- - sudo cp ./NotoSansCJKsc-Bold.otf /usr/share/fonts/opentype/noto
- - sudo cp ./NotoSansCJKsc-DemiLight.otf /usr/share/fonts/opentype/noto
- - sudo cp ./NotoSansCJKsc-Light.otf /usr/share/fonts/opentype/noto
- - sudo cp ./NotoSansCJKsc-Medium.otf /usr/share/fonts/opentype/noto
- - sudo cp ./NotoSansCJKsc-Regular.otf /usr/share/fonts/opentype/noto
- - sudo cp ./NotoSansCJKsc-Thin.otf /usr/share/fonts/opentype/noto
- - sudo fc-cache -f -v
  - sudo apt-get update -qq
  - sudo apt-get install -y texlive-full
  - sudo fc-cache -f -v
